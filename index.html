@@ -15,7 +15,9 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <span class="logo-mark">MVVAL</span>
+        <img src="images/logo.png" class="nav-logo-img" alt="MV VAL Construction OPC"
+          onerror="this.style.display='none';document.querySelector('.nav-logo .logo-mark').style.display='inline'">
+        <span class="logo-mark" style="display:none">MVVAL</span>
         <span class="logo-divider"></span>
         <span class="logo-text">MV VAL<br><small>CONSTRUCTION OPC</small></span>
       </a>
@@ -58,7 +60,7 @@
       </div>
       <h1 class="hero-headline">
         Built on<br>
-        <span class="accent">Quality.</span>
+        <span class="hero-quality">Quality.</span>
       </h1>
       <h2 class="hero-sub">Driven by Excellence.</h2>
       <p class="hero-tagline">Engineering · Construction · Workmanship</p>
@@ -237,6 +239,7 @@
           <span class="org-role">CORPORATE SECRETARY</span>
           <span class="org-name">ROSEMARIE C. VALITE</span>
         </div>
+        <div class="org-connector-v"></div>
         <div class="org-branch">
           <div class="org-branch-line"></div>
           <div class="org-branch-nodes">
@@ -272,8 +275,10 @@
       <div class="projects-grid">
 
         <!-- PROJECT 01 -->
-        <div class="project-card" id="proj01">
-          <div class="project-photo proj-evo"></div>
+        <div class="project-card" id="proj01" role="button" tabindex="0" aria-label="View EVO City BPO project details">
+          <div class="project-photo proj-evo">
+            <div class="project-view-overlay"><span>VIEW DETAILS</span></div>
+          </div>
           <div class="project-info">
             <div class="project-status completed">● COMPLETED · COMMERCIAL</div>
             <h3>EVO CITY BPO 1 &amp; 2</h3>
@@ -298,8 +303,10 @@
         </div>
 
         <!-- PROJECT 02 -->
-        <div class="project-card" id="proj02">
-          <div class="project-photo proj-ayala"></div>
+        <div class="project-card" id="proj02" role="button" tabindex="0" aria-label="View Ayala Malls Vermosa project details">
+          <div class="project-photo proj-ayala">
+            <div class="project-view-overlay"><span>VIEW DETAILS</span></div>
+          </div>
           <div class="project-info">
             <div class="project-status completed">● COMPLETED · ARCHITECTURAL FINISHING</div>
             <h3>AYALA MALLS VERMOSA</h3>
@@ -325,8 +332,10 @@
         </div>
 
         <!-- PROJECT 03 -->
-        <div class="project-card" id="proj03">
-          <div class="project-photo proj-flood"></div>
+        <div class="project-card" id="proj03" role="button" tabindex="0" aria-label="View Flood Control Structure project details">
+          <div class="project-photo proj-flood">
+            <div class="project-view-overlay"><span>VIEW DETAILS</span></div>
+          </div>
           <div class="project-info">
             <div class="project-status ongoing">● ONGOING · INFRASTRUCTURE</div>
             <h3>FLOOD CONTROL STRUCTURE</h3>
@@ -360,38 +369,44 @@
     <div class="container">
       <h2 class="section-title">ACCREDITATIONS &amp; CERTIFICATIONS.</h2>
       <p class="accred-intro">MV VAL Construction OPC is a <strong>fully registered, licensed, and compliant</strong> Philippine construction firm — carrying the regulatory standing required for commercial, residential, and infrastructure engagements with both private and corporate clients.</p>
+      <p class="accred-click-hint">Click any card to view certificate details.</p>
       <div class="accred-grid">
-        <div class="accred-card">
+        <div class="accred-card" data-accred-id="0" role="button" tabindex="0" aria-label="View SEC Certificate">
           <span class="accred-body">Securities &amp; Exchange Commission</span>
           <h4>CERTIFICATE OF INCORPORATION</h4>
           <div class="accred-detail"><span>COMPANY REG. NO.</span><span>2024090168725-03</span></div>
           <div class="accred-detail"><span>ISSUED</span><span>September 2024</span></div>
+          <div class="accred-view-hint">TAP TO VIEW →</div>
         </div>
-        <div class="accred-card">
+        <div class="accred-card" data-accred-id="1" role="button" tabindex="0" aria-label="View LGU Permit">
           <span class="accred-body">City of General Trias, Province of Cavite</span>
           <h4>INTEGRATED LGU PERMIT</h4>
           <div class="accred-detail"><span>LINE</span><span>Construction Services</span></div>
           <div class="accred-detail"><span>VALIDITY</span><span>CY 2026</span></div>
+          <div class="accred-view-hint">TAP TO VIEW →</div>
         </div>
-        <div class="accred-card">
+        <div class="accred-card" data-accred-id="2" role="button" tabindex="0" aria-label="View PCAB License">
           <span class="accred-body">PCAB · DTI Phil. Contractors Accreditation Board</span>
           <h4>REGULAR CONTRACTOR'S LICENSE</h4>
           <div class="accred-detail"><span>LICENSE NO.</span><span>61199</span></div>
           <div class="accred-detail"><span>REGION</span><span>4A · CALABARZON</span></div>
           <div class="accred-detail"><span>VALIDITY</span><span>CFY 2026 – 2027</span></div>
+          <div class="accred-view-hint">TAP TO VIEW →</div>
         </div>
-        <div class="accred-card">
+        <div class="accred-card" data-accred-id="3" role="button" tabindex="0" aria-label="View BIR Certificate">
           <span class="accred-body">Bureau of Internal Revenue</span>
           <h4>CERTIFICATE OF REGISTRATION</h4>
           <div class="accred-detail"><span>TIN &amp; BRANCH CODE</span><span>670-283-999-00000</span></div>
           <div class="accred-detail"><span>ISSUED</span><span>February 2025</span></div>
           <div class="accred-detail"><span>CLASSIFICATION</span><span>Construction Services</span></div>
+          <div class="accred-view-hint">TAP TO VIEW →</div>
         </div>
-        <div class="accred-card accred-highlight">
+        <div class="accred-card accred-highlight" data-accred-id="4" role="button" tabindex="0" aria-label="View Ayala Land Prequalification">
           <span class="accred-body">CRIF Philippines · Vendor Integrity Access</span>
           <h4>AYALA LAND PREQUALIFIED VENDOR</h4>
           <div class="accred-detail"><span>DUNS</span><span>72-855-8265</span></div>
           <div class="accred-detail"><span>VALIDITY</span><span>13 April 2027</span></div>
+          <div class="accred-view-hint">TAP TO VIEW →</div>
         </div>
       </div>
     </div>
@@ -428,6 +443,45 @@
       <span>Engineering · Construction · Workmanship</span>
     </div>
   </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-label="Project Details">
+    <div class="modal-container" id="projectModalContainer">
+      <button class="modal-close-btn" id="projectModalClose" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-body">
+        <div class="modal-gallery-col">
+          <div class="modal-cover" id="modalCover"></div>
+          <div class="modal-thumbs" id="modalThumbs"></div>
+        </div>
+        <div class="modal-info-col">
+          <div class="modal-proj-status" id="modalProjStatus"></div>
+          <h2 class="modal-proj-title" id="modalProjTitle"></h2>
+          <p class="modal-proj-desc" id="modalProjDesc"></p>
+          <div class="modal-proj-details" id="modalProjDetails"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACCREDITATION MODAL -->
+  <div class="modal-overlay" id="accredModal" role="dialog" aria-modal="true" aria-label="Certificate Details">
+    <div class="modal-container accred-modal-container" id="accredModalContainer">
+      <button class="modal-close-btn" id="accredModalClose" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="accred-cert-frame">
+        <div class="cert-img-display">
+          <img id="certImage" src="" alt="Certificate">
+        </div>
+        <div class="cert-info-bar">
+          <span class="cert-info-title" id="certTitle"></span>
+          <span class="cert-info-issuer" id="certIssuer"></span>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
