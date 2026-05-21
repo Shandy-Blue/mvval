@@ -78,7 +78,7 @@ ul { list-style: none; }
 
 /* Logo image replaces MVVAL text mark */
 .nav-logo-img {
-  height: 40px;
+  height: 28px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -915,7 +915,9 @@ ul { list-style: none; }
 
 .project-photo {
   height: 240px;
-  background: var(--dark2);
+  background-color: var(--dark2);
+  background-size: cover;
+  background-position: center;
   position: relative;
   overflow: hidden;
 }
@@ -1561,7 +1563,7 @@ footer {
 
   .contact-item { flex-direction: column; gap: 0.4rem; text-align: center; }
 
-  .nav-logo-img { height: 32px; }
+  .nav-logo-img { height: 24px; }
 
   .accred-modal-container { max-width: 100%; }
   .cert-img-display { max-height: 60vh; }
